@@ -37,8 +37,8 @@ Code_Level_Table = pd.DataFrame(
 outputFileName = "./output/output.xlsx"
 
 with pd.ExcelWriter(outputFileName, engine="xlsxwriter") as writer:
-    Heard_PGLangs_Table.to_excel(writer, sheet_name="Thống kê đơn giản", index=False, startrow=0, startcol=0)  # Ghi vào A1
-    Use_PGLang_Table.to_excel(writer, sheet_name="Thống kê đơn giản", index=False, startrow=0, startcol=5)  # Ghi vào C6
-    Code_Level_Table.to_excel(writer, sheet_name="Thống kê đơn giản", index=False, startrow=0, startcol=8) # Ghi vào E11
+    Heard_PGLangs_Table.to_excel(writer, sheet_name="Thống kê đơn giản", index=False, startrow=0, startcol=0)
+    Use_PGLang_Table.to_excel(writer, sheet_name="Thống kê đơn giản", index=False, startrow=0, startcol=5)
+    Code_Level_Table.to_excel(writer, sheet_name="Thống kê đơn giản", index=False, startrow=0, startcol=8)
 
 print("Kiểm tra thư mục output của source code")

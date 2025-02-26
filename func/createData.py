@@ -39,6 +39,8 @@ def PGLangs(dataFile) :
             else : Used_PGLang[lang] = 1
 
     # print(Used_PGLang)
+    Heared_PGLang = dict(sorted(Heared_PGLang.items(), key=lambda item: item[1], reverse=True))
+    Used_PGLang = dict(sorted(Used_PGLang.items(), key=lambda item: item[1], reverse=True))
     return Heared_PGLang, Used_PGLang
 
 def GetCodeLevel(dataFile) :
