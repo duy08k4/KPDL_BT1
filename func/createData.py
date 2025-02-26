@@ -54,4 +54,4 @@ def GetCodeLevel(dataFile) :
             CodeLevel[level] = CodeLevel[level] + 1
         else : CodeLevel[level] = 1
     
-    return CodeLevel
+    return dict(sorted(CodeLevel.items(), key=lambda item: item[1], reverse=True))
